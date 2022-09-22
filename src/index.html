@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>My Documentation</title>
+  <meta name="description" content="FSUIPC7 Einführung">
+  <meta name="author" content="Joe Herwig">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="version" content="2.0">
+  <link rel="stylesheet" href="css/coding-docs.css">
+  <link rel="stylesheet" href="css/coding-docs-print.css">
+  <script src="js/generate-toc.js"></script>
+</head>
+<body id="contents"><img id="title" src="img/title-image.svg" style="width:100%;">
+  <p class="small">by Joachim Herwig</p>
+  <h1>Foreword </h1>
+  <p>This documentation template is intended to provide an easy base to start with writing documentation that should be published online and as PDF / for printing. </p>
+  <p>On providing this template and the approach to write the documentation i ensured that easy conversion to EPUBs like with Calibre is ensured by focussing on formatting based on CSS.</p>
+  <h1>Table of contents</h1>
+  <div id="toc"></div>
+  <h1>Something about PUG and SASS</h1>
+  <p>This ain't going to be a Tutorial regarding PUG and SASS. But you can check it out online for instance @ Youtube: </p>
+  <iframe src="https://www.youtube.com/embed/uvUJ6g9zc6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <p>a way how images can be added to the documentation if you want to have a label as well:</p>
+  <h1>Examples of styles </h1>
+  <h2>Image + Label</h2>
+  <div class="keepTogether">
+    <Label>Screenshot "pug icon search"</Label><img src="https://i.imgur.com/0Sn048k.png">
+  </div>
+  <h2>Code example</h2>
+  <p>You can also add code and keep it together with a label:</p>
+  <div class="keepTogether">
+    <label>Just add a block like this for instance for an ini-file</label>
+    <pre class="code"> .keepTogether
+  label program.ini
+  pre.code
+    | [general]             
+    | key=value</pre>
+  </div>
+  <h2>Cite + label</h2>
+  <div class="keepTogether">
+    <cite>PUG is great as you can write very fast based on meta level without caring for design.</cite>
+    <label> <a href="my.source.com" target="_blank">Joe Herwig</a></label>
+  </div>
+  <h2>Table</h2>
+  <table style="table-layout:auto;">
+    <colgroup>
+      <col>
+      <col>
+      <col>
+      <col>
+    </colgroup>
+    <tbody>
+      <tr>
+        <th>1st row</th>
+        <th>Item</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><span id="A">A</span></td>
+        <td>main()</td>
+        <td>Contains the framework for the rest of functions</td>
+      </tr>
+      <tr>
+        <td><span id="B">B</span></td>
+        <td>init()</td>
+        <td>Initializes constants, variables and triggers opening of required connections</td>
+      </tr>
+      <tr>
+        <td><span id="C">C</span></td>
+        <td>dispose()</td>
+        <td>Takes care to shutdown / remove what is not needed anymore</td>
+      </tr>
+    </tbody>
+  </table>
+  <h1>Links</h1>
+  <h2>Coding </h2>
+  <h2>Tools used</h2>
+  <h3>my tool 1</h3>
+  <h3>my tool 2</h3>
+</body>

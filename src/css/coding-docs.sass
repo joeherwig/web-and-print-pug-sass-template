@@ -1,0 +1,171 @@
+$base-color: #ffffff
+$colorA1: #06799F
+$colorA2: #216278
+$colorA3: #024E68
+$colorA4: #3AAACF
+$colorB1: #1531AE
+$colorB2: #2D3C82
+$colorB3: #071A71
+$colorB4: #4962D6
+$colorC1: #00BB3F
+$colorC2: #238C47
+$colorC3: #007929
+$colorC4: #37DD6F
+$colorD1: #FF8300
+$colorD2: #BF7930
+$colorD3: #A65500
+$colorD4: #FFA240
+
+body
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif
+  width: 90%
+  max-width: 800px
+  margin-left: auto
+  margin-right: auto
+  padding: 1em
+
+h1
+  display: block
+  page-break-before: always
+  page-break-inside: avoid
+  margin-top: 3em
+h2 
+  display: block
+  margin-top: 2em
+
+a:has([href]), a:not([name])
+  color: #597d97ff
+  text-decoration: none !important
+
+img
+  border: none !important
+  background: none !important
+  max-width: 100%
+img#title
+    margin: 200px 0px 200px 0px
+
+.icons
+  display: flex
+  flex-flow: row wrap
+  align-content: flex-start 
+.col
+  display: flex
+  margin: 1%
+  width: 90px
+  flex: 0 0 auto
+  flex-flow: row wrap
+  align-content: flex-start
+  svg
+    flex: 0 0 auto
+.col.Software, .col.Visuals
+  width: 190px
+svg, object
+  width: 70px
+  height: 70px
+  border: 0px solid $base-color
+  border-radius: 10%
+  padding: 1%
+  margin: 3%
+  path
+    fill: $base-color
+
+td
+  vertical-align: top
+
+tr:nth-child(odd) 
+  background: #d2d2d2
+
+span[id]
+  padding-left: 1em
+  font-weight: bold
+
+svg.Workstation, object.Workstation
+  background:  $colorA1
+
+.code
+  background: #eeeeee
+  border: 0px solid transparent
+  border-left: 3px solid #666666
+  color: #333333
+  page-break-inside: avoid
+  font-family: monospace
+  text-align: left
+  line-height: 1.6
+  margin: 0px 0px 1.6em 0px
+  max-width: 100%
+  overflow: auto
+  padding: 1em 1.5em
+  display: block
+  word-wrap: break-word
+
+label
+  background: none
+  text-align: left
+  display: block
+  color: #666666
+  border-left: 3px solid
+  padding: 0em 0px 0px 8px
+  margin: 1.5em 0px 0px 0px 
+  page-break-after: avoid
+
+
+.caution
+  background: #ffa5005e
+  border: 0px solid transparent
+  border-left: 3px solid #666666
+  font-style: italic
+  color: #333333
+  page-break-inside: avoid
+  text-align: left
+  margin-bottom: 1.6em
+  max-width: 100%
+  overflow: auto
+  padding: 1em 1.5em
+  display: block
+  word-wrap: break-word
+
+.caution::before
+  content: "⚠️"
+  font-style: normal
+  margin-right: 0.5em
+  display: block
+  float: left
+  font-size: 2em
+
+iframe[src*="youtube"]
+  aspect-ratio: 16/9
+  width: 100%
+
+.controls *
+  font-size: 0.4rem !important
+
+cite
+  display: block
+  padding: 0.5em
+  margin-left: 1.5em
+  border-right: 2px solid #005fb8
+  color: #7b8791
+  &::before
+    content: "❞"
+    font-size: 2.5em
+    padding-right: 1em
+    color: #005fb8
+    display: block
+    float: left
+  & + label
+    page-break-before: none
+    font-size: small
+    display: block
+    border-right: 2px solid #005fb8 !important
+    margin: 0px
+    text-align: right
+    padding: 10px
+    font-style: italic
+    border-left: none
+    &::after
+      content: "❝"
+      font-size: 2.5em
+      padding-left: .5em
+      color: #005fb8
+      display: block
+      float: right

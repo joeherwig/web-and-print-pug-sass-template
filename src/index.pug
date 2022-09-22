@@ -1,0 +1,88 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title My Documentation
+  meta(name='description' content='FSUIPC7 Einführung')
+  meta(name='author' content='Joe Herwig')
+  meta(name='apple-mobile-web-app-capable' content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style' content='black-translucent')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='version' content="2.0")
+  link(rel='stylesheet' href='css/coding-docs.css')
+  link(rel='stylesheet' href='css/coding-docs-print.css')
+  script(src='js/generate-toc.js')
+
+body#contents
+  img#title(src="img/title-image.svg" style="width:100%;")
+  p.small by Joachim Herwig
+  h1 Foreword 
+  p This documentation template is intended to provide an easy base to start with writing documentation that should be published online and as PDF / for printing. 
+  p On providing this template and the approach to write the documentation i ensured that easy conversion to EPUBs like with Calibre is ensured by focussing on formatting based on CSS.
+  
+  h1 Table of contents
+  #toc
+  
+  h1 Something about PUG and SASS
+  p This ain't going to be a Tutorial regarding PUG and SASS. But you can check it out online for instance @ Youtube: 
+  iframe(src="https://www.youtube.com/embed/uvUJ6g9zc6o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+  p a way how images can be added to the documentation if you want to have a label as well:
+  
+  
+  h1 Examples of styles 
+  
+  h2 Image + Label
+  .keepTogether
+    Label Screenshot "pug icon search"
+    img(src="https://i.imgur.com/0Sn048k.png")
+
+  h2 Code example
+  p You can also add code and keep it together with a label:
+  .keepTogether
+    label Just add a block like this for instance for an ini-file
+    pre.code 
+      |.keepTogether
+      |   label program.ini
+      |   pre.code
+      |     | [general]             
+      |     | key=value
+
+  h2 Cite + label
+  .keepTogether
+    cite PUG is great as you can write very fast based on meta level without caring for design.
+    label 
+      a(href="my.source.com" target="_blank") Joe Herwig
+  
+  h2 Table
+  table(style='table-layout:auto;')
+    colgroup
+      col
+      col
+      col
+      col
+    tbody
+      tr
+        th 1st row
+        th Item
+        th Description
+      tr
+        td
+          span#A A
+        td main()
+        td Contains the framework for the rest of functions
+      tr
+        td
+          span#B B
+        td init()
+        td Initializes constants, variables and triggers opening of required connections
+      tr
+        td
+          span#C C
+        td dispose()
+        td Takes care to shutdown / remove what is not needed anymore
+
+  
+  h1 Links
+  h2 Coding 
+  h2 Tools used
+  h3 my tool 1
+  h3 my tool 2
